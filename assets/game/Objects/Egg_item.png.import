@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do7x5kbyb7xd5"
-path="res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"
+uid="uid://dycp7ayms30ux"
+path="res://.godot/imported/Egg_item.png-7ccf6faa2204ddfbec72c42d7be71745.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/Tilesets/grass.png"
-dest_files=["res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"]
+source_file="res://assets/game/Objects/Egg_item.png"
+dest_files=["res://.godot/imported/Egg_item.png-7ccf6faa2204ddfbec72c42d7be71745.ctex"]
 
 [params]
 

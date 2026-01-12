@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do7x5kbyb7xd5"
-path="res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"
+uid="uid://by04y4sg1lkhu"
+path="res://.godot/imported/Basic Grass Biom things 1.png-db061c2d5a4acded3037a9ec88e117bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/Tilesets/grass.png"
-dest_files=["res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"]
+source_file="res://assets/game/Objects/Basic Grass Biom things 1.png"
+dest_files=["res://.godot/imported/Basic Grass Biom things 1.png-db061c2d5a4acded3037a9ec88e117bc.ctex"]
 
 [params]
 

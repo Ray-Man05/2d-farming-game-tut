@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do7x5kbyb7xd5"
-path="res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"
+uid="uid://u0vci11rtdrm"
+path="res://.godot/imported/Basic_Plants.png-92646f18f870d2f170bfa09a65962d9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/Tilesets/grass.png"
-dest_files=["res://.godot/imported/grass.png-b0fdf30b57c886f52261eec6392b4c82.ctex"]
+source_file="res://assets/game/Objects/Basic_Plants.png"
+dest_files=["res://.godot/imported/Basic_Plants.png-92646f18f870d2f170bfa09a65962d9f.ctex"]
 
 [params]
 
