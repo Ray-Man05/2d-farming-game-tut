@@ -2,32 +2,51 @@ extends NodeState
 
 @export var player: Player
 @export var animated_sprite_2d: AnimatedSprite2D
+@export var hit_component_collision_shape: CollisionShape2D
+
+func _ready() -> void:
+	hit_component_collision_shape.disabled = true
+	hit_component_collision_shape.position = Vector2(0, 0)
 
 func _on_process(_delta : float) -> void:
-    pass
+	pass
 
 
 func _on_physics_process(_delta : float) -> void:
-    pass
+	pass
 
 
 func _on_next_transitions() -> void:
-    if !animated_sprite_2d.is_playing():
-        transition.emit("Idle")
+	if !animated_sprite_2d.is_playing():
+		transition.emit("Idle")
 
 func _on_enter() -> void:
+	
+	var position: Vector2
 
-    if player.player_direction == Vector2.UP:
-        animated_sprite_2d.play("chopping_back")
-    elif player.player_direction == Vector2.DOWN:
-        animated_sprite_2d.play("chopping_front")
-    elif player.player_direction == Vector2.RIGHT:
-        animated_sprite_2d.play("chopping_right")
-    elif player.player_direction == Vector2.LEFT:
-        animated_sprite_2d.play("chopping_left")
+	if player.player_direction == Vector2.UP:
+		animated_sprite_2d.play("chopping_back")
+		position = Vector2(0, -18)
+		
+	elif player.player_direction == Vector2.DOWN:
+		animated_sprite_2d.play("chopping_front")
+		position = Vector2(0, 3)
+				
+	elif player.player_direction == Vector2.RIGHT:
+		animated_sprite_2d.play("chopping_right")
+		position = Vector2(9, 0)
+		
+	elif player.player_direction == Vector2.LEFT:
+		animated_sprite_2d.play("chopping_left")
+		position = Vector2(-9, 0)
 
-    else:
-        animated_sprite_2d.play("chopping_front")
+	else:
+		animated_sprite_2d.play("chopping_front")
+		position = Vector2(0, 3)
+	
+	hit_component_collision_shape.position = position
+	hit_component_collision_shape.disabled	= false
 
 func _on_exit() -> void:
-    animated_sprite_2d.stop()
+	animated_sprite_2d.stop()
+	hit_component_collision_shape.disabled = true
